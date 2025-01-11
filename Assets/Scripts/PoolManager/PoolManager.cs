@@ -54,7 +54,7 @@ public class PoolManager : MonoBehaviour
     }
     public GameObject Spawn(string Tag,Vector3 position,Quaternion rotation,Transform parent=null)
     {
-
+        Debug.Log(PoolObjects[Tag]);
         temp = PoolObjects[Tag].Dequeue();
         if (parent!=null)
         {

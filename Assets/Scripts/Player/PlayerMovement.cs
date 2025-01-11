@@ -86,7 +86,8 @@ public class PlayerMovement : MonoBehaviour
         MoveForward();
 
     }
-   
+
+
     public void Slide()
     {
 

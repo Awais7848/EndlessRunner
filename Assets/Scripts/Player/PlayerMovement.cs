@@ -59,17 +59,11 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Space)&&IsGrounded)
+        if (!IsGrounded)
         {
-            Jump();
-        }
-        else
-        {
+
             animator.SetBool("Jump", false);
         }
-
-        SwitchLanes();
-        Slide();
 
 
 
@@ -84,60 +78,30 @@ public class PlayerMovement : MonoBehaviour
     {
 
         MoveForward();
-
+        SwitchLanes();
     }
 
 
-    public void Slide()
+   
+
+
+ 
+
+
+
+     void SwitchLanes()
     {
 
-
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            capsuleCollider.height = 0.5f;
-            capsuleCollider.center = new Vector3(0, 0.3f, 0f);
-            animator.SetTrigger("Slide");
-        }
-
-    }
-
-
-    public void Jump()
-    {
-        jumpVector.y = Mathf.Sqrt(-2.0f * Physics2D.gravity.y * height);
-        playerRB.velocity += jumpVector;
-
-        animator.SetBool("Jump", true);
-        animator.SetBool("Slide", false);
-
-    }
-
-    public void SwitchLanes()
-    {
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            positionV.x += LineDistance;
-
-            animator.SetTrigger("Right");
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            positionV.x -= LineDistance;
-
-            animator.SetTrigger("Left");
-        }
+      
 
 
         positionV.x = Mathf.Clamp(positionV.x, -LineDistance, LineDistance);
         positionV.z = playerRB.position.z;
-        positionV.y = transform.position.y;
-        transform.position = Vector3.Lerp(transform.position, positionV, Time.deltaTime * Smoothness);
+        positionV.y = playerRB.position.y;
+        playerRB.position = Vector3.Lerp(transform.position, positionV, Time.deltaTime * Smoothness);
 
     }
-
-
-    public void MoveForward()
+     void MoveForward()
     {
         moveVector = transform.forward * 100f * forwardSpeed * Time.deltaTime;
         moveVector.y = playerRB.velocity.y;
@@ -146,5 +110,51 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+
+    public void MoveLeft()
+    {
+      
+
+        
+            positionV.x -= LineDistance;
+
+            animator.SetTrigger("Left");
+       
+    }
+    public void MoveRight()
+    {
+     
+            positionV.x += LineDistance;
+
+            animator.SetTrigger("Right");
+        
+
+    }
+    public void Slide()
+    {
+
+
+
+        capsuleCollider.height = 0.5f;
+        capsuleCollider.center = new Vector3(0, 0.3f, 0f);
+        animator.SetTrigger("Slide");
+
+
+    }
+    public void Jump()
+    {
+        if (IsGrounded)
+        {
+            jumpVector.y = Mathf.Sqrt(-2.0f * Physics2D.gravity.y * height);
+            playerRB.velocity += jumpVector;
+
+            animator.SetBool("Jump", true);
+            animator.SetBool("Slide", false);
+        }
+
+    }
+
+
+    
 
 }

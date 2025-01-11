@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class EnvironmentManager : MonoBehaviour
 {
     string poolName = "Patch";
 
     float zdiff = 105;
-    float initializeFloat = -350f;
-    float lastOffset=-455f;
+    float lastOffset=-350f;
 
     public static EnvironmentManager Instance;
     private void Awake()
@@ -16,14 +14,14 @@ public class EnvironmentManager : MonoBehaviour
         Instance = this;
     }
     // Start is called before the first frame update
-    IEnumerator   Start()
+    void   Start()
     {
        
-        yield return new WaitForSeconds(0.2f);
-        for (int i = 0; i < 4; i++)
+        Application.targetFrameRate = 60;
+        for (int i = 0; i < 3; i++)
         {
-            PoolManager.Do.Spawn("Patch", new Vector3(0, 0, lastOffset), Quaternion.identity);
-            lastOffset += zdiff;
+           GameObject g= PoolManager.Do.Spawn("Patch", new Vector3(0, 0, lastOffset), Quaternion.identity);
+          lastOffset += zdiff;
         }
     }
 

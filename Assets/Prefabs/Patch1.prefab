@@ -126,6 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8163136779117200306}
   - component: {fileID: 998727380428348839}
+  - component: {fileID: -6867905686167945578}
   m_Layer: 0
   m_Name: Patch1
   m_TagString: Patch
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_RendererInfo:
   - renderer: {fileID: 6436232670312693477}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.2674374, y: 0.2674374, z: 0.26698303, w: 0.3366566}
+    lightmapOffsetScale: {x: 0.2674374, y: 0.2674374, z: -0.0010446773, w: 0.60716444}
   - renderer: {fileID: 4888533498267772265}
     lightmapIndex: 0
     lightmapOffsetScale: {x: 0.2525091, y: 0.2525091, z: 0.5344972, w: 0.33671492}
@@ -176,16 +177,16 @@ MonoBehaviour:
     lightmapOffsetScale: {x: 0.083524965, y: 0.083524965, z: -0.0003262694, w: 0.8649081}
   - renderer: {fileID: 2692520473608541212}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.012028124, y: 0.012028124, z: 0.9872577, w: 0.04096864}
+    lightmapOffsetScale: {x: 0.012028124, y: 0.012028124, z: 0.9872577, w: 0.027296765}
   - renderer: {fileID: 2692520473608541214}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.012028126, y: 0.012028126, z: 0.9872577, w: 0.01362489}
+    lightmapOffsetScale: {x: 0.012028126, y: 0.012028126, z: 0.9872577, w: -0.000046984867}
   - renderer: {fileID: 2692520473608541208}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.012028124, y: 0.012028124, z: 0.9872577, w: 0.027296765}
+    lightmapOffsetScale: {x: 0.012028124, y: 0.012028124, z: 0.9872577, w: 0.04096864}
   - renderer: {fileID: 2692520473608541210}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.012028126, y: 0.012028126, z: 0.9872577, w: -0.000046984867}
+    lightmapOffsetScale: {x: 0.012028126, y: 0.012028126, z: 0.9872577, w: 0.01362489}
   - renderer: {fileID: 1483640708720660179}
     lightmapIndex: 0
     lightmapOffsetScale: {x: 0.2701786, y: 0.2701786, z: -0.0010553851, w: 0.3366459}
@@ -200,13 +201,13 @@ MonoBehaviour:
     lightmapOffsetScale: {x: 0.025545606, y: 0.025545606, z: 0.19777364, w: 0.9538125}
   - renderer: {fileID: 7686818156255313565}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.20252356, y: 0.20252356, z: 0.77854264, w: 0.5898399}
+    lightmapOffsetScale: {x: 0.20252356, y: 0.20252356, z: 0.7873645, w: 0.3369102}
   - renderer: {fileID: 848691655778290248}
     lightmapIndex: 0
     lightmapOffsetScale: {x: 0.021660436, y: 0.021660436, z: 0.6756966, w: 0.3110408}
   - renderer: {fileID: 8687429518261051548}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.2674374, y: 0.2674374, z: -0.0010446773, w: 0.60716444}
+    lightmapOffsetScale: {x: 0.2674374, y: 0.2674374, z: 0.26698303, w: 0.3366566}
   - renderer: {fileID: 6747340185003289928}
     lightmapIndex: 1
     lightmapOffsetScale: {x: 0.2437976, y: 0.2437976, z: -0.0009523344, w: -0.0009523344}
@@ -215,205 +216,205 @@ MonoBehaviour:
     lightmapOffsetScale: {x: 0.31149605, y: 0.31149605, z: 0.6745645, w: -0.0012167814}
   - renderer: {fileID: 421518269823871460}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.20252356, y: 0.20252356, z: 0.7873645, w: 0.3369102}
+    lightmapOffsetScale: {x: 0.20252356, y: 0.20252356, z: 0.77854264, w: 0.5898399}
   - renderer: {fileID: 204659055614664174}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.3381529, y: 0.3381529, z: 0.33656973, w: -0.0013209097}
-  - renderer: {fileID: 5141247589290978233}
+    lightmapOffsetScale: {x: 0.3381529, y: 0.3381529, z: -0.0013209097, w: -0.0013209097}
+  - renderer: {fileID: 7110772478764560999}
     lightmapIndex: 0
     lightmapOffsetScale: {x: 0.2525091, y: 0.2525091, z: 0.26704136, w: 0.6042931}
   - renderer: {fileID: 6824324576781786310}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.3381529, y: 0.3381529, z: -0.0013209097, w: -0.0013209097}
+    lightmapOffsetScale: {x: 0.3381529, y: 0.3381529, z: 0.33656973, w: -0.0013209097}
   - renderer: {fileID: 4540925442264151012}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.77900374, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.51127446, w: -0.00030512584}
   - renderer: {fileID: 8766239331740814908}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.44434214, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.16556393, w: 0.91766363}
   - renderer: {fileID: 1412262646722167801}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.16556393, w: 0.91766363}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.3774098, w: 0.15594487}
   - renderer: {fileID: 5597583916202754709}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.51127446, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.84593606, w: 0.07781988}
   - renderer: {fileID: 4916978992834305914}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.3774098, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: 0.23406987}
   - renderer: {fileID: 153638361681346469}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.31047744, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.31047744, w: -0.00030512584}
   - renderer: {fileID: 229221565774245188}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.51127446, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.44434214, w: 0.15594487}
   - renderer: {fileID: 4499463097526399805}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.6451391, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.44434214, w: -0.00030512584}
   - renderer: {fileID: 7577556717741255899}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.9128684, w: 0.07781988}
   - renderer: {fileID: 6800210765700563100}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.5782068, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: 0.15594487}
   - renderer: {fileID: 2442682898203772588}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.16556393, w: 0.76141363}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.7120714, w: 0.07781988}
   - renderer: {fileID: 5304443013960300806}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.3774098, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.09863159, w: 0.91766363}
   - renderer: {fileID: 4218505155295595285}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: 0.07781988}
   - renderer: {fileID: 3513977672359586012}
     lightmapIndex: 1
     lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.16556393, w: 0.83953863}
   - renderer: {fileID: 6795519034247042217}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.09863159, w: 0.76141363}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.44434214, w: 0.07781988}
   - renderer: {fileID: 2667660368623251924}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.84593606, w: 0.07781988}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.1975683, w: 0.87548214}
   - renderer: {fileID: 517577934774285355}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.31047744, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.6451391, w: -0.00030512584}
   - renderer: {fileID: 4544948002903438239}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.09863159, w: 0.91766363}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.9128684, w: 0.15594487}
   - renderer: {fileID: 1306532332031598112}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.84593606, w: 0.15594487}
-  - renderer: {fileID: 8855934818464927707}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.9128684, w: -0.00030512584}
-  - renderer: {fileID: 8025746534121681273}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.7120714, w: 0.15594487}
-  - renderer: {fileID: 1864713322537196875}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.44434214, w: -0.00030512584}
-  - renderer: {fileID: 8867374161815934248}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.3774098, w: -0.00030512584}
-  - renderer: {fileID: 148473435872518170}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.7120714, w: -0.00030512584}
-  - renderer: {fileID: 2414835820986410039}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.09863159, w: 0.83953863}
-  - renderer: {fileID: 9062207911092285982}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: -0.00030512584}
-  - renderer: {fileID: 7293748492840439816}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.6451391, w: 0.15594487}
-  - renderer: {fileID: 6502619722831882348}
     lightmapIndex: 0
     lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.46559602, w: 0.857904}
+  - renderer: {fileID: 8855934818464927707}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.16556393, w: 0.76141363}
+  - renderer: {fileID: 8025746534121681273}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.6451391, w: 0.07781988}
+  - renderer: {fileID: 1864713322537196875}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.9128684, w: -0.00030512584}
+  - renderer: {fileID: 8867374161815934248}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.51127446, w: 0.07781988}
+  - renderer: {fileID: 148473435872518170}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.84593606, w: 0.15594487}
+  - renderer: {fileID: 2414835820986410039}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.5782068, w: 0.15594487}
+  - renderer: {fileID: 9062207911092285982}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.7120714, w: -0.00030512584}
+  - renderer: {fileID: 7293748492840439816}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.09863159, w: 0.76141363}
+  - renderer: {fileID: 6502619722831882348}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.3774098, w: 0.07781988}
   - renderer: {fileID: 2387310188761776659}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: 0.23406987}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.77900374, w: 0.15594487}
   - renderer: {fileID: 7848410654277621385}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.31047744, w: -0.00030512584}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.24354509, w: -0.00030512584}
   - renderer: {fileID: 7015584284880141062}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.6451391, w: -0.00030512584}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.6451391, w: 0.15594487}
   - renderer: {fileID: 2149701290219013978}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.84593606, w: -0.00030512584}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.3774098, w: -0.00030512584}
   - renderer: {fileID: 1381787221223210648}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.7120714, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.7120714, w: 0.15594487}
   - renderer: {fileID: 3152557859194379846}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.5782068, w: -0.00030512584}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.77900374, w: 0.07781988}
   - renderer: {fileID: 8687762773846473114}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.51127446, w: -0.00030512584}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.5782068, w: 0.07781988}
   - renderer: {fileID: 2389053293667291780}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.9128684, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.078112215, y: 0.078112215, z: 0.51127446, w: 0.15594487}
   - renderer: {fileID: 7446168257631365141}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.1975683, w: 0.87548214}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.5782068, w: -0.0003051258}
   - renderer: {fileID: 3498161680254640956}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.77900374, w: -0.0003051258}
+    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.31047744, w: 0.07781988}
   - renderer: {fileID: 5260222748254261525}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.5782068, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.77900374, w: -0.0003051258}
   - renderer: {fileID: 5972924014950039557}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.77900374, w: 0.15594487}
+    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.09863159, w: 0.83953863}
   - renderer: {fileID: 3211085940975929920}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.9128684, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.84593606, w: -0.0003051258}
   - renderer: {fileID: 405231193058200665}
     lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.44434214, w: 0.07781988}
+    lightmapOffsetScale: {x: 0.07811221, y: 0.07811221, z: 0.31047744, w: 0.15594487}
   - renderer: {fileID: 3329982007763520106}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.53508353, w: 0.8343716}
-  - renderer: {fileID: 4735330395829726996}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.24374062}
-  - renderer: {fileID: 7225200108254858071}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.87538725}
-  - renderer: {fileID: 4676392131464934402}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.5542875}
-  - renderer: {fileID: 4487089037402897536}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.77893376, w: 0.89589506}
-  - renderer: {fileID: 6509127038531209722}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.34725624}
-  - renderer: {fileID: 1532383772973667872}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.6578031}
-  - renderer: {fileID: 6713664587187440833}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.45077187}
-  - renderer: {fileID: 3010826475734463405}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.34725624}
-  - renderer: {fileID: 5090431089982472018}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.45077187}
-  - renderer: {fileID: 4994832590157129154}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.87538725}
-  - renderer: {fileID: 647186454096880156}
-    lightmapIndex: 1
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.5542875}
-  - renderer: {fileID: 7490424920427691734}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.63402027, w: 0.8343716}
-  - renderer: {fileID: 2629190388927338355}
-    lightmapIndex: 0
     lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.26762772, w: 0.8578091}
-  - renderer: {fileID: 8602349046833785613}
+  - renderer: {fileID: 4735330395829726996}
     lightmapIndex: 0
     lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.77893376, w: 0.79237944}
-  - renderer: {fileID: 4682292874633963252}
+  - renderer: {fileID: 7225200108254858071}
     lightmapIndex: 1
     lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.6578031}
-  - renderer: {fileID: 4371260259081111624}
+  - renderer: {fileID: 4676392131464934402}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.34725624}
+  - renderer: {fileID: 4487089037402897536}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.8778705, w: 0.89589506}
-  - renderer: {fileID: 2721397290487753720}
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.63402027, w: 0.8343716}
+  - renderer: {fileID: 6509127038531209722}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.5542875}
+  - renderer: {fileID: 1532383772973667872}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.45077187}
+  - renderer: {fileID: 6713664587187440833}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.24374062}
+  - renderer: {fileID: 3010826475734463405}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.5542875}
+  - renderer: {fileID: 5090431089982472018}
     lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.36656442, w: 0.8578091}
-  - renderer: {fileID: 4247806076623806360}
-    lightmapIndex: 0
-    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.8778705, w: 0.79237944}
-  - renderer: {fileID: 7551223087755274225}
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.53508353, w: 0.8343716}
+  - renderer: {fileID: 4994832590157129154}
     lightmapIndex: 1
     lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.24374062}
-  - renderer: {fileID: 5114529978802247210}
+  - renderer: {fileID: 647186454096880156}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.6578031}
+  - renderer: {fileID: 7490424920427691734}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.36656442, w: 0.8578091}
+  - renderer: {fileID: 2629190388927338355}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.87538725}
+  - renderer: {fileID: 8602349046833785613}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.34725624}
+  - renderer: {fileID: 4682292874633963252}
     lightmapIndex: 1
     lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: -0.00040000599, w: 0.76131874}
+  - renderer: {fileID: 4371260259081111624}
+    lightmapIndex: 1
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.45077187}
+  - renderer: {fileID: 2721397290487753720}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.8778705, w: 0.89589506}
+  - renderer: {fileID: 4247806076623806360}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.09853671, w: 0.87538725}
+  - renderer: {fileID: 7551223087755274225}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.8778705, w: 0.79237944}
+  - renderer: {fileID: 5114529978802247210}
+    lightmapIndex: 0
+    lightmapOffsetScale: {x: 0.10240153, y: 0.10240153, z: 0.77893376, w: 0.89589506}
   m_Lightmaps:
   - {fileID: 2800000, guid: 042d341245c7a42c1ac31bf038246aab, type: 3}
   - {fileID: 2800000, guid: b01af7f6ad27b403c9d1355b4a588a5f, type: 3}
@@ -421,9 +422,31 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 0689af38110e843e58d46e047208a7ce, type: 3}
   - {fileID: 2800000, guid: d1e0941265d69490282795b838b41c79, type: 3}
   m_ShadowMasks:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 5d4535b2c8e1445a3a532388fb46b8ac, type: 3}
+  - {fileID: 2800000, guid: 7f1d93c10fc0647ecb2965cd8fea1d60, type: 3}
   m_LightInfo: []
+--- !u!114 &-6867905686167945578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057012839007745403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bcc12a0ed308af449e94c31deb762c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _curveOn: 1
+  pos: {fileID: 0}
+  _curvature: 1
+  curve1: 1
+  curve2: -0
+  _slantX: 0.92
+  _slantZ: 1
+  _flatMargin: 0
+  _flatMargin2: 0
+  CurveMode: 0
 --- !u!1 &5824983342150022832
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +490,7 @@ Transform:
   - {fileID: 4532281538205365811}
   - {fileID: 421518269822102276}
   - {fileID: 204659055612894990}
-  - {fileID: 5141247589292747097}
+  - {fileID: 7110772478762791047}
   - {fileID: 6824324576784080422}
   m_Father: {fileID: 8163136779117200306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4247,79 +4270,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5114529978804538954}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5141247589293143001
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7553681176449296185}
-    m_Modifications:
-    - target: {fileID: 100000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_Name
-      value: Building_BaberShop
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -50.16783
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 36.7648
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7164295
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.6976595
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -88.479
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
---- !u!23 &5141247589290978233 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2300000, guid: da3aa27e16a60194ea66f90d187a3660,
-    type: 3}
-  m_PrefabInstance: {fileID: 5141247589293143001}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5141247589292747097 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660,
-    type: 3}
-  m_PrefabInstance: {fileID: 5141247589293143001}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5260222748256160117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5393,6 +5343,79 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2300000, guid: 4e3b8318a9112f24d84095e1a4d96ae0,
     type: 3}
   m_PrefabInstance: {fileID: 7108887548890046525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7110772478762396167
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7553681176449296185}
+    m_Modifications:
+    - target: {fileID: 100000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_Name
+      value: Building_BaberShop
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.16783
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.7648
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7164295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6976595
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -88.479
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da3aa27e16a60194ea66f90d187a3660, type: 3}
+--- !u!4 &7110772478762791047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: da3aa27e16a60194ea66f90d187a3660,
+    type: 3}
+  m_PrefabInstance: {fileID: 7110772478762396167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7110772478764560999 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: da3aa27e16a60194ea66f90d187a3660,
+    type: 3}
+  m_PrefabInstance: {fileID: 7110772478762396167}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7225200108252828471
 PrefabInstance:

@@ -13,15 +13,20 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float Smoothness;
 
-    [SerializeField]Animator animator;
 
     [SerializeField] float height;
-
+    [Header("Ground Check")]
     [SerializeField] LayerMask groundCheck;
     [SerializeField] float GroundDistance;
     [SerializeField] Transform groundCheckPosition;
-    [SerializeField] CapsuleCollider capsuleCollider;
-   bool IsGrounded
+    [SerializeField] float LineDistance;
+    
+    Animator animator;
+    CapsuleCollider capsuleCollider;
+
+    Vector3 moveVector, jumpVector;
+
+    bool IsGrounded
     {
 
         get
@@ -42,37 +47,18 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerRB = GetComponent<Rigidbody>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
+        animator = GetComponent<Animator>();
     }
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
 
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            positionV.x += 2;
-
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            positionV.x -= 2;
-        }
-
-
-        positionV.x = Mathf.Clamp(positionV.x, -2, 2);
-        positionV.z = playerRB.position.z;
-        positionV.y = transform.position.y;
-        transform.position = Vector3.Lerp(transform.position,positionV,Time.deltaTime*Smoothness);
-        animator.SetFloat("Speed", playerRB.velocity.magnitude);
         if (Input.GetKeyDown(KeyCode.Space)&&IsGrounded)
         {
             Jump();
@@ -82,39 +68,82 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Jump", false);
         }
 
+        SwitchLanes();
+        Slide();
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            capsuleCollider.height = 0.5f;
-            capsuleCollider.center= new Vector3(0,0.3f,0f);
-            animator.SetBool("Slide", true);
-        }
 
-     
 
-        Debug.Log("Is Grounded : " + IsGrounded);
+        animator.SetFloat("Speed", playerRB.velocity.magnitude);
+
     }
 
 
-    
 
 
     private void FixedUpdate()
     {
-        playerRB.velocity += transform.forward * forwardSpeed * Time.deltaTime;
 
+        MoveForward();
+
+    }
+   
+    public void Slide()
+    {
+
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            capsuleCollider.height = 0.5f;
+            capsuleCollider.center = new Vector3(0, 0.3f, 0f);
+            animator.SetTrigger("Slide");
+        }
 
     }
 
-   
 
     public void Jump()
     {
-        playerRB.velocity += new Vector3(0, Mathf.Sqrt(-2.0f * Physics2D.gravity.y * height),0);
+        jumpVector.y = Mathf.Sqrt(-2.0f * Physics2D.gravity.y * height);
+        playerRB.velocity += jumpVector;
+
         animator.SetBool("Jump", true);
         animator.SetBool("Slide", false);
 
     }
+
+    public void SwitchLanes()
+    {
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            positionV.x += LineDistance;
+
+            animator.SetTrigger("Right");
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            positionV.x -= LineDistance;
+
+            animator.SetTrigger("Left");
+        }
+
+
+        positionV.x = Mathf.Clamp(positionV.x, -LineDistance, LineDistance);
+        positionV.z = playerRB.position.z;
+        positionV.y = transform.position.y;
+        transform.position = Vector3.Lerp(transform.position, positionV, Time.deltaTime * Smoothness);
+
+    }
+
+
+    public void MoveForward()
+    {
+        moveVector = transform.forward * 100f * forwardSpeed * Time.deltaTime;
+        moveVector.y = playerRB.velocity.y;
+
+        playerRB.velocity = moveVector;
+    }
+
 
 
 }

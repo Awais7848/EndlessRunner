@@ -17,7 +17,7 @@ public class RespawnEnvironmentPatch : MonoBehaviour
 
     void SpawnNext()
     {
-
+        patch.RespawnObstacles();
         EnvironmentManager.Instance.Respawn(patch.gameObject);
     }
 

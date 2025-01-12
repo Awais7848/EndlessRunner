@@ -133,7 +133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8163136779117200306
 Transform:
   m_ObjectHideFlags: 0
@@ -441,17 +441,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patchData: {fileID: 11400000, guid: 15854170b24184e8ebf34940eb389727, type: 2}
-  ObstaclePrefab: {fileID: 9102651978170236865, guid: 1e2c749d9b256457cacc1041aa072d2f,
-    type: 3}
   Lines:
   - {fileID: 2382488038045297006}
   - {fileID: 8455100986716016529}
   - {fileID: 1378768459716011177}
-  Prefabs:
-  - Blue
-  - Red
-  - Police
-  - Truck
 --- !u!1 &2756044484744151985
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnAfterSeconds: 0.5
-  patch: {fileID: 1057012839007745403}
+  patch: {fileID: 6380313997790587672}
 --- !u!1001 &148473435874424954
 PrefabInstance:
   m_ObjectHideFlags: 0

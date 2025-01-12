@@ -6,7 +6,7 @@ public class EnvironmentManager : MonoBehaviour
     string poolName = "Patch";
 
     float zdiff = 105;
-    float lastOffset=-350f;
+    float lastOffset=-455f;
 
     public static EnvironmentManager Instance;
     private void Awake()

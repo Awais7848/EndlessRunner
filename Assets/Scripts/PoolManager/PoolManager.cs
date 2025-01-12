@@ -54,7 +54,7 @@ public class PoolManager : MonoBehaviour
     }
 
 
-    public static GameObject SpawnObject(string Tag, Vector3 position, Quaternion rotation, Transform parent = null)
+    public static GameObject SpawnObject(string Tag, Vector3 position=default, Quaternion rotation=default, Transform parent = null)
     {
         return Do.Spawn(Tag, position, rotation, parent);
     }

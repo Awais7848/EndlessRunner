@@ -5,7 +5,7 @@ using UnityEngine;
 public class RespawnEnvironmentPatch : MonoBehaviour
 {
     [SerializeField] float respawnAfterSeconds;
-    [SerializeField] GameObject patch;
+    [SerializeField] EnvironmentPatch patch;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +18,7 @@ public class RespawnEnvironmentPatch : MonoBehaviour
     void SpawnNext()
     {
 
-        EnvironmentManager.Instance.Respawn(patch);
+        EnvironmentManager.Instance.Respawn(patch.gameObject);
     }
 
 

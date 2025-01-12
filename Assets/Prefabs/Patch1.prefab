@@ -126,14 +126,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8163136779117200306}
   - component: {fileID: 998727380428348839}
-  - component: {fileID: -6867905686167945578}
+  - component: {fileID: 6380313997790587672}
   m_Layer: 0
   m_Name: Patch1
   m_TagString: Patch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8163136779117200306
 Transform:
   m_ObjectHideFlags: 0
@@ -150,6 +150,9 @@ Transform:
   - {fileID: 7553681176449296185}
   - {fileID: 6911300740187356692}
   - {fileID: 1943610730233902706}
+  - {fileID: 2382488038045297006}
+  - {fileID: 8455100986716016529}
+  - {fileID: 1378768459716011177}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &998727380428348839
@@ -425,7 +428,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 5d4535b2c8e1445a3a532388fb46b8ac, type: 3}
   - {fileID: 2800000, guid: 7f1d93c10fc0647ecb2965cd8fea1d60, type: 3}
   m_LightInfo: []
---- !u!114 &-6867905686167945578
+--- !u!114 &6380313997790587672
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -434,19 +437,114 @@ MonoBehaviour:
   m_GameObject: {fileID: 1057012839007745403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bcc12a0ed308af449e94c31deb762c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 485524ebbd4a54b01852026f845152e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _curveOn: 1
-  pos: {fileID: 0}
-  _curvature: 1
-  curve1: 1
-  curve2: -0
-  _slantX: 0.92
-  _slantZ: 1
-  _flatMargin: 0
-  _flatMargin2: 0
-  CurveMode: 0
+  patchData: {fileID: 11400000, guid: 15854170b24184e8ebf34940eb389727, type: 2}
+  ObstaclePrefab: {fileID: 9102651978170236865, guid: 1e2c749d9b256457cacc1041aa072d2f,
+    type: 3}
+  Lines:
+  - {fileID: 2382488038045297006}
+  - {fileID: 8455100986716016529}
+  - {fileID: 1378768459716011177}
+  Prefabs:
+  - Blue
+  - Red
+  - Police
+  - Truck
+--- !u!1 &2756044484744151985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1378768459716011177}
+  m_Layer: 0
+  m_Name: Lane3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1378768459716011177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756044484744151985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.5, y: 0, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8163136779117200306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4844930368408056042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2382488038045297006}
+  m_Layer: 0
+  m_Name: Lane1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2382488038045297006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844930368408056042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.5, y: 0, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8163136779117200306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4854893462891549383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8455100986716016529}
+  m_Layer: 0
+  m_Name: Lane2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8455100986716016529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4854893462891549383}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8163136779117200306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5824983342150022832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,7 +2724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.526774
+      value: 9.526773
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
       propertyPath: m_LocalPosition.y

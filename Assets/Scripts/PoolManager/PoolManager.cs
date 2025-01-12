@@ -19,7 +19,7 @@ public class PoolManager : MonoBehaviour
 
 
 
-    public static PoolManager Do;
+     static PoolManager Do;
 
     [Header("Objects To Pool")]
     [SerializeField] ObjectsToPool[] pool;
@@ -52,10 +52,30 @@ public class PoolManager : MonoBehaviour
         }
        
     }
-    public GameObject Spawn(string Tag,Vector3 position,Quaternion rotation,Transform parent=null)
+
+
+    public static GameObject SpawnObject(string Tag, Vector3 position, Quaternion rotation, Transform parent = null)
+    {
+        return Do.Spawn(Tag, position, rotation, parent);
+    }
+
+    public static void DestroyObject(string Tag, GameObject gameObject)
+    {
+
+        Do.Destroy(Tag, gameObject);
+    }
+
+
+
+     GameObject Spawn(string Tag,Vector3 position,Quaternion rotation,Transform parent=null)
     {
         Debug.Log(PoolObjects[Tag]);
+        
         temp = PoolObjects[Tag].Dequeue();
+        if (temp == null)
+        {
+            Debug.Log("The Object is Not Present in Pool ");
+        }
         if (parent!=null)
         {
             temp.transform.parent = parent;
@@ -70,7 +90,7 @@ public class PoolManager : MonoBehaviour
 
     }
 
-    public void Destroy(string Tag,GameObject gameObject)
+     void Destroy(string Tag,GameObject gameObject)
     {
         Debug.Log(tag);
         gameObject.SetActive(false);

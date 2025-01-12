@@ -19,6 +19,6 @@ public class PoolRegister : MonoBehaviour
     {
         //Debug.Log("Pool Tag !");
 
-        PoolManager.Do.Destroy(poolTag, gameObject);
+        PoolManager.DestroyObject(poolTag, gameObject);
     }
 }

@@ -20,7 +20,7 @@ public class EnvironmentManager : MonoBehaviour
         Application.targetFrameRate = 60;
         for (int i = 0; i < 3; i++)
         {
-           GameObject g= PoolManager.Do.Spawn("Patch", new Vector3(0, 0, lastOffset), Quaternion.identity);
+           GameObject g= PoolManager.SpawnObject("Patch", new Vector3(0, 0, lastOffset), Quaternion.identity);
           lastOffset += zdiff;
         }
     }

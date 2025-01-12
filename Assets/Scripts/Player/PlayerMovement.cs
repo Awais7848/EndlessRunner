@@ -154,7 +154,12 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void SlideEnd()
+    {
 
+        capsuleCollider.height = 2f;
+        capsuleCollider.center = new Vector3(0, 1f, 0f);
+    }
     
 
 }

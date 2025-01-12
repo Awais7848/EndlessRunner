@@ -13,6 +13,8 @@ public class PlayerInput : MonoBehaviour
 	public float SWIPE_THRESHOLD = 20f;
 
 	[SerializeField]UnityEvent _OnSwipeRight, _OnSwipeLeft, _OnSwipeUp, _OnSwipeDown;
+
+	[SerializeField] bool useKeyboard;
 	// Update is called once per frame
 	void Update()
 	{
@@ -41,6 +43,28 @@ public class PlayerInput : MonoBehaviour
 				fingerDownPos = touch.position;
 				DetectSwipe();
 			}
+		}
+
+        if (useKeyboard)
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+				OnSwipeLeft();
+            }
+
+
+			if (Input.GetKeyDown(KeyCode.D))
+			{
+				OnSwipeRight();
+			}
+			if (Input.GetKeyDown(KeyCode.W))
+			{
+				OnSwipeUp();
+			}
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+				OnSwipeDown();
+            }
 		}
 	}
 

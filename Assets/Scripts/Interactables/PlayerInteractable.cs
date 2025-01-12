@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerInteractble : MonoBehaviour
 {
-    [SerializeField] string EffectObject;
     [Header("Interaction Method")]
     [SerializeField] bool Trigger;
 
@@ -51,8 +50,7 @@ public class PlayerInteractble : MonoBehaviour
     protected virtual void OnPlayerInteract()
     {
         Debug.Log("Compare Tag");
-        PoolManager.SpawnObject(EffectObject, transform.position, Quaternion.identity);
-
+       
 
     }
 }

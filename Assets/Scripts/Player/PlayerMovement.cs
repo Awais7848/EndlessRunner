@@ -26,7 +26,11 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 moveVector, jumpVector;
 
+    [Header("GameOver References")]
     [SerializeField] GameObject camera;
+    [SerializeField] GameObject particles;
+
+    [SerializeField] AudioClip MovementClip, JumpClip;
     bool IsGrounded
     {
 
@@ -57,7 +61,9 @@ public class PlayerMovement : MonoBehaviour
     {
         forwardSpeed = 0f;
         animator.SetTrigger("Death");
+        
         camera.SetActive(true);
+        particles.gameObject.SetActive(true);
         this.enabled = false;
     }
 
@@ -127,6 +133,7 @@ public class PlayerMovement : MonoBehaviour
             positionV.x -= LineDistance;
 
             animator.SetTrigger("Left");
+        AudioSource.PlayClipAtPoint(MovementClip,transform.position);
        
     }
     public void MoveRight()
@@ -135,7 +142,8 @@ public class PlayerMovement : MonoBehaviour
             positionV.x += LineDistance;
 
             animator.SetTrigger("Right");
-        
+
+        AudioSource.PlayClipAtPoint(MovementClip, transform.position);
 
     }
     public void Slide()
@@ -146,6 +154,12 @@ public class PlayerMovement : MonoBehaviour
         capsuleCollider.height = 0.5f;
         capsuleCollider.center = new Vector3(0, 0.3f, 0f);
         animator.SetTrigger("Slide");
+        if (!IsGrounded)
+        {
+            jumpVector.y = 2.0f * Physics2D.gravity.y * height;
+            playerRB.velocity += jumpVector;
+        }
+        AudioSource.PlayClipAtPoint(JumpClip, transform.position);
 
 
     }
@@ -158,6 +172,8 @@ public class PlayerMovement : MonoBehaviour
 
             animator.SetBool("Jump", true);
             animator.SetBool("Slide", false);
+
+            AudioSource.PlayClipAtPoint(JumpClip, transform.position);
         }
 
     }

@@ -49,9 +49,8 @@ public class EnvironmentPatch : MonoBehaviour
                     break;
                 case SpawnType.Cars:
                     GameObject g = PoolManager.SpawnObject(patchData.CarPrefabs[Random.Range(0, patchData.CarPrefabs.Length)], InitialPosition, Quaternion.identity, Line);
-
+                    InitialPosition.y = -0.45f;
                     g.transform.localPosition = InitialPosition;
-
                     InitialPosition.z += patchData.GetOffset(lineData.lineData[i]);
                     objects.Add(g);
                     break;

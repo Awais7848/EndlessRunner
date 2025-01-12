@@ -34,6 +34,7 @@ MonoBehaviour:
     OffSet: 15
   - spawnType: 2
     OffSet: 13
+  DistanceOffset: 5
   CarPrefabs:
   - Red
   - Blue

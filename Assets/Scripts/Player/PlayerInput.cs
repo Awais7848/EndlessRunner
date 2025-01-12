@@ -15,10 +15,25 @@ public class PlayerInput : MonoBehaviour
 	[SerializeField]UnityEvent _OnSwipeRight, _OnSwipeLeft, _OnSwipeUp, _OnSwipeDown;
 
 	[SerializeField] bool useKeyboard;
-	// Update is called once per frame
-	void Update()
-	{
 
+	bool freezeInput=false;
+    private void Awake()
+    {
+		freezeInput = false;
+		GameEvents.GameOver += GameOver;
+        
+    }
+
+	void GameOver()
+    {
+		freezeInput = true;
+    }
+
+    // Update is called once per frame
+    void Update()
+	{
+		if (freezeInput)
+			return;
 		foreach (Touch touch in Input.touches)
 		{
 			if (touch.phase == TouchPhase.Began)

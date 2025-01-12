@@ -82,7 +82,7 @@ public class EnvironmentPatch : MonoBehaviour
 
 
             }
-            InitialPosition.z += 10f;
+            InitialPosition.z += patchData.DistanceOffset;
 
             if (InitialPosition.z >= 50f)
             {

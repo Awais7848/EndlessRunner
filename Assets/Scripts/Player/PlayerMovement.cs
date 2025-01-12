@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 moveVector, jumpVector;
 
+    [SerializeField] GameObject camera;
     bool IsGrounded
     {
 
@@ -49,9 +50,16 @@ public class PlayerMovement : MonoBehaviour
         playerRB = GetComponent<Rigidbody>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         animator = GetComponent<Animator>();
+        GameEvents.GameOver += GameOver;
     }
 
-
+    void GameOver()
+    {
+        forwardSpeed = 0f;
+        animator.SetTrigger("Death");
+        camera.SetActive(true);
+        this.enabled = false;
+    }
 
 
     // Update is called once per frame
@@ -160,6 +168,15 @@ public class PlayerMovement : MonoBehaviour
         capsuleCollider.height = 2f;
         capsuleCollider.center = new Vector3(0, 1f, 0f);
     }
-    
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Obstacle"))
+        {
+            Debug.Log("tEST");
+            animator.SetBool("Death", true);
+        }
+    }
 
 }

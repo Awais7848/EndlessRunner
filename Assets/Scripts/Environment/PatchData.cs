@@ -40,6 +40,9 @@ public class PatchData : ScriptableObject
     [Header("Spawn Data")]
     [SerializeField] List<SpawnData> SpawnData;
 
+    [Header("Difficulty Offset")]
+    [Range(0f, 50f)]
+    public float DistanceOffset;
     public LineData GetRandomLine
     {
 

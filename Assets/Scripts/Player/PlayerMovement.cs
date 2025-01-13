@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody playerRB;
 
-    [SerializeField] float forwardSpeed;
+    [SerializeField]public float forwardSpeed;
 
     Vector3 positionV;
 

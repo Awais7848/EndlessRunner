@@ -13,7 +13,10 @@ public class Coin : PlayerInteractble
         base.OnPlayerInteract();
         AudioSource.PlayClipAtPoint(coinCollect, transform.position);
         PoolManager.SpawnObject("CoinCollect", transform.position+offset, Quaternion.identity);
+        PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
+        UIManager.Instance.UpdateScoreCounter();
         this.gameObject.SetActive(false);
+
         Debug.Log("Player Interacted");
 
     }

@@ -7,6 +7,7 @@ public class RespawnEnvironmentPatch : MonoBehaviour
     [SerializeField] float respawnAfterSeconds;
     [SerializeField] EnvironmentPatch patch;
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

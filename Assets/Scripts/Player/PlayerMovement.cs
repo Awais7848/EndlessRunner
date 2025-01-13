@@ -53,10 +53,16 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody>();
         capsuleCollider = GetComponent<CapsuleCollider>();
+        
         animator = GetComponent<Animator>();
+
         GameEvents.GameOver += GameOver;
     }
+    private void OnDestroy()
+    {
+        GameEvents.GameOver -= GameOver;
 
+    }
     void GameOver()
     {
         forwardSpeed = 0f;
@@ -195,4 +201,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+
+   
 }

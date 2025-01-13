@@ -28,9 +28,13 @@ public class PlayerInput : MonoBehaviour
     {
 		freezeInput = true;
     }
+	private void OnDestroy()
+	{
+		GameEvents.GameOver -= GameOver;
 
-    // Update is called once per frame
-    void Update()
+	}
+	// Update is called once per frame
+	void Update()
 	{
 		if (freezeInput)
 			return;

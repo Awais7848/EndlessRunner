@@ -31,10 +31,10 @@ public class UIManager : MonoBehaviour
         {
             Timer += 1;
             yield return new WaitForSeconds(1f);
-            if (Timer > 60)
+            if (Timer > 30)
             {
                 playerController.forwardSpeed = 8f;
-            }else if (Timer > 120)
+            }else if (Timer > 90)
             {
                 playerController.forwardSpeed = 10F;
             }
@@ -51,7 +51,11 @@ public class UIManager : MonoBehaviour
         Invoke("SetFail", 3f);
 
     }
+    private void OnDestroy()
+    {
+        GameEvents.GameOver -= GameOver;
 
+    }
     void SetFail()
     {
         FailPanel.SetActive(true);
@@ -64,8 +68,21 @@ public class UIManager : MonoBehaviour
 
    public void Restart()
     {
+
+        SceneManager.UnloadScene(1);
+        SceneManager.LoadSceneAsync(0);
+
+    }
+
+    private void SceneManager_sceneUnloaded(Scene arg0)
+    {
+        SceneManager.sceneUnloaded -= SceneManager_sceneUnloaded;
+    }
+
+    void LoadSceneAfterDelay()
+    {
+
         SceneManager.LoadScene(0);
-        
     }
 
     public void UpdateScoreCounter()
